@@ -30,21 +30,21 @@ public class UsuarioController {
             Long id = Long.valueOf(idParam);
             usuarioService.ExcluirUsuario(id);
             response.status(200);
-            return "Produto removido com sucesso.";
+            return "Usuario removido com sucesso.";
         });
         post("/usuarios", (request,response) -> {
             dto.UsuarioDTOInput usuarioDTOInput = objMapper.readValue(request.body(), dto.UsuarioDTOInput.class);
             usuarioService.InserirUsuario(usuarioDTOInput);
             response.type("application/json");
             response.status(201);
-            return "Produto inserido com sucesso.";
+            return "Usuario inserido com sucesso.";
         });
         put("/usuarios", (request,response) -> {
             dto.UsuarioDTOInput usuarioDTOInput = objMapper.readValue(request.body(), dto.UsuarioDTOInput.class);
             usuarioService.AlterarUsuario(usuarioDTOInput);
             response.type("application/json");
             response.status(201);
-            return "Produto alterado com sucesso.";
+            return "Usuario alterado com sucesso.";
         });
     }
 }

@@ -17,7 +17,7 @@ public class ServiceTest {
     @org.junit.jupiter.api.Test
     public void InserçãoDeUsuario(){
         UsuarioService usuarioService = new UsuarioService();
-        dto.UsuarioDTOInput usuarioDTOInput = new UsuarioDTOInput(1,"Marcos","12345");
+        dto.UsuarioDTOInput usuarioDTOInput = new UsuarioDTOInput();
         usuarioService.InserirUsuario(usuarioDTOInput);
         System.out.println(usuarioService.ListarUsuarios().size());
         assertEquals(usuarioService.ListarUsuarios().size(),1);
