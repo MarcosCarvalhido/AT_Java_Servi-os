@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/sparkweb.iml" filepath="$PROJECT_DIR$/.idea/sparkweb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sparkweb/sparkweb.iml" filepath="$PROJECT_DIR$/sparkweb/sparkweb.iml" />
     </modules>
   </component>
 </project>
